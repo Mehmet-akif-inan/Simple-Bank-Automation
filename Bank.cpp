@@ -2,15 +2,13 @@
 #include <conio.h>
 #include <windows.h>
 
-
-
 int main()
 {
 	float cash=5000, x; 
 	char username[20];
-	int password=9876; //Sifreyi kullanıcıdan almak yerine ben belirledim.
+	int password=9876; //Sifreyi kullanÃ½cÃ½dan almak yerine ben belirledim.
 	int option;
-	double account_number; //Kullanıcıdan transfer işlemi için istenilen hesap numarası
+	double account_number; //KullanÃ½cÃ½dan transfer iÃ¾lemi iÃ§in istenilen hesap numarasÃ½
 	
 
 	printf("Welcome To AkifBank\n\n");
@@ -22,7 +20,7 @@ int main()
 	while(password!=9876)
 	{
 		printf("Wrong Password. Try again...\n");
-		printf("Please enter your password: ", password); //Sifre kontrolü icin while yapısı kullanıldı.Sifre dogru girilmedigi sürece tekrar sorgulanıyor.
+		printf("Please enter your password: ", password); //Sifre kontrolÃ¼ icin while yapÃ½sÃ½ kullanÃ½ldÃ½.Sifre dogru girilmedigi sÃ¼rece tekrar sorgulanÃ½yor.
 	    scanf("%d", &password);
 		if (password==9876)
 		{
@@ -33,7 +31,7 @@ int main()
 	printf("The Password Is Matched... \n\n");
 
 	
-	printf("...The System Is Loading.Please Wait...\n\n"); //3 saniye bekleme süresi.
+	printf("...The System Is Loading.Please Wait...\n\n"); //3 saniye bekleme sÃ¼resi.
     Sleep( 3000 );  
 
    
@@ -82,7 +80,7 @@ int main()
 			scanf("%f" , &x);
 			while(x<0)
 			{
-				printf("You Can Not Enter A Negative Value...\n"); //Negatif sayi kontrolü
+				printf("You Can Not Enter A Negative Value...\n"); //Negatif sayi kontrolÃ¼
 				printf("Enter the amount of money: ");
 			    scanf("%f" , &x);
 				if(x>0)
@@ -102,7 +100,7 @@ int main()
 			scanf("%f" , &x);
 			while(x>5000)
 			{
-				printf("Insufficient Funds...\n"); //Bakiye kontrolü
+				printf("Insufficient Funds...\n"); //Bakiye kontrolÃ¼
 				printf("Enter the amount of money: ");
 			    scanf("%f" , &x);
 					
@@ -139,7 +137,7 @@ int main()
 			break;
 
 		case 5:
-			printf("Thanks For Choosing Us "); //Mesajı verdikten sonra 1 saniye bekler sonra sistem otomatik kapanır.
+			printf("Thanks For Choosing Us "); //MesajÃ½ verdikten sonra 1 saniye bekler sonra sistem otomatik kapanÃ½r.
 			Sleep( 10000 ); 
 			return 0;
 			break;
